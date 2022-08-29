@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>サイトタイトル</title>
+    <meta name="description" content="ディスクリプションを入力">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- [if lt IE 9] -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <!-- [endif] -->
+    <script src="main.js"></script>
+    <!-- ここからスライドのソース -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!----- header----->
+    <header>
+        <div id="header_inner_1">
+            <div id="header_logo">
+                <img src="img/logo.png">
+            </div>
+            <div id="header_menu_1">
+                <nav>
+                    <ul>
+                        <li><a href=”#”>Top</a></li>
+                        <li><a href=”#”>About</a></li>
+                        <li><a href=”#”>Project</a></li>
+                        <li><a href=”#”>Recruit</a></li>
+                        <li> <a href=”#”>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="header_inner_2">
+            <div id="header_menu_2">
+                <nav>
+                    <ul>
+                        <li><a href=”#”>赤羽</a></li>
+                        <li><a href=”#”>王子</a></li>
+                        <li> <a href=”#”>王子神谷</a></li>
+                        <li> <a href=”#”>志茂</a></li>
+                        <li><a href=”#”>十条</a></li>
+                        <li><a href=”#”>東十条</a></li>
+                        <li> <a href=”#”>浮間船橋</a></li>
+                        <li><a href=”#”>北赤羽</a></li>
+                        <li><a href=”#”>尾久</a></li>
+                        <li> <a href=”#”>田端</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!----- /header ----->
+
+    <!----- main ----->
+    <div id="main">
+        <div id="top_content">
+            <div class="slider">
+                <img src="img/slide_1.jpg" alt="">
+                <img src="img/slide_2.jpg" alt="">
+                <img src="img/slide_3.jpg" alt="">
+                <img src="img/slide_4.jpg" alt="">
+            </div>
+        </div>
+        <div id="top_news">
+            <div id="news_streaming">
+                <h2 id="news_title">最新ニュース</h2>
+            </div>
+        </div>
+        <div id="main_content">
+            <!-- ここらからサイドバー -->
+            <div id="side">
+                <h2 id="side_top">詳細検索</h2>
+                <div id="form_wrapper">
+                    <form class="searchForm">
+                        <input type="search" class="text" placeholder="キーワードで探す">
+                        <button type="submit" value="検索"><img
+                                src="https://drive.google.com/uc?export=view&id=14qL6YD2g-JNNp6ClYdNpiVjZDAGp3eaL"
+                                alt=""></button>
+                    </form>
+                    <div class="search_container">
+                        <h2 class="search_title underline">賃料</h2>
+                        <form class="rent_price">
+                            <input type="search" class="text" placeholder="下限なし">
+                            <button type="submit" value="検索"></button>
+                        </form>
+                        <div id="price_icon">～</div>
+                        <form class="rent_price">
+                            <input type="search" class="text" placeholder="上限なし">
+                            <button type="submit" value="検索"></button>
+                        </form>
+                    </div>
+                    <div class="search_container">
+                        <h2 class="search_title underline">アクセス</h2>
+                        <a href="" class="btn"><span>沿線・駅を指定</span></a>
+                        <a href="" class="btn"><span>エリアを指定</span></a>
+                    </div>
+                    <div class="search_container">
+                        <h2 class="search_title underline">駅徒歩</h2>
+                        <select class="walk_time">
+                            <option value="選択肢1">指定しない</option>
+                            <option value="選択肢2">選択肢2</option>
+                            <option value="選択肢3">選択肢3</option>
+                        </select>
+                        分
+                    </div>
+                    <div id="search_erea">
+                        <a href="" class="search_button"><span>検索</span></a>
+                    </div>
+                </div>
+                <!-- ここからサイドの別コンテンツ -->
+                <div id="side_other">
+                    <div class="container">
+                        <!-- The content -->
+                        特集ページ
+                        <!-- The left side -->
+                        <div class="container__side container__side--left"></div>
+                        <!-- The left triangle displayed below the content -->
+                        <div class="container__triangle container__triangle--left"></div>
+                        <!-- The right triangle displayed below the content -->
+                        <div class="container__triangle container__triangle--right"></div>
+                        <!-- The right side -->
+                        <div class="container__side container__side--right"></div>
+                    </div>
+                    <img src="img/banner.jpg" class="side_banner">
+                </div>
+            </div>
+            <!-- ここからメイン -->
+            <div id="home_ex">
+                <div id="home_img">
+                    <h2>物件例</h2>
+                    <div class="raw">
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                    </div>
+                    <div class="raw">
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                    </div>
+                    <div class="raw">
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                        <div class="home_detail">
+                            <img src="img/home_ex.jpg">
+                            <h3>メゾン・ハイム赤羽</h2>
+                                <div class="home_info">家賃：<span class="price">60000円</span><br>
+                                    交通：赤羽液から徒歩15分<br>
+                                    住所：北区赤羽1-1-1<br>
+                                    間取り：1DK
+                                </div>
+                        </div>
+                    </div>
+                    <div id="hoom_bottom">
+                        <a href="" class="btn"><span>もっと見る</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----- /main ----->
+    <!----- footer ----->
+    <footer>
+        <div id="footer_inner">
+            <div id="map_wrap">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103580.54668449784!2d139.72718467373258!3d35.77802714470639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601891dc68347377%3A0xc180870e7f484240!2z5p2x5Lqs6YO96Laz56uL5Yy6!5e0!3m2!1sja!2sjp!4v1638240319467!5m2!1sja!2sjp"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href=”#”>Top</a></li>
+                        <li><a href=”#”>About</a></li>
+                        <li><a href=”#”>Project</a></li>
+                        <li><a href=”#”>Recruit</a></li>
+                        <li> <a href=”#”>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!----- /footer ----->
+</body>
+
+</html>
